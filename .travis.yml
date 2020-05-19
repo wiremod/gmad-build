@@ -1,9 +1,13 @@
 language: cpp
 
+dist: bionic
 addons:
   apt:
     packages:
     - premake4
+
+notifications:
+  email: false
 
 script:
 - cd bootil/projects && premake4 gmake
